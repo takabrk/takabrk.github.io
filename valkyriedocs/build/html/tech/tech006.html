@@ -1,20 +1,18 @@
-
 <!DOCTYPE html>
 
-<html lang="ja">
+<html lang="ja" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>6. PHP Hack &#8212; Valkyrie Linux Documentation 1.0.0 ドキュメント</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=514cf933" />
     
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script src="../_static/documentation_options.js?v=144c8c96"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4dbe4bdc"></script>
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -44,9 +42,9 @@
           <div class="body" role="main">
             
   <section id="php-hack">
-<h1><span class="section-number">6. </span>PHP Hack<a class="headerlink" href="#php-hack" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">6. </span>PHP Hack<a class="headerlink" href="#php-hack" title="Link to this heading">¶</a></h1>
 <section id="smarty-3-1">
-<h2><span class="section-number">6.1. </span>Smarty 3.1ではプラグインの追加方法が変更されているので注意<a class="headerlink" href="#smarty-3-1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">6.1. </span>Smarty 3.1ではプラグインの追加方法が変更されているので注意<a class="headerlink" href="#smarty-3-1" title="Link to this heading">¶</a></h2>
 <p>PHPテンプレートエンジン「Smarty」では、プラグインの自作が出来ますが、従来の方法は <a class="reference external" href="http://www.smarty.net/docs/ja/variable.plugins.dir.tpl">http://www.smarty.net/docs/ja/variable.plugins.dir.tpl</a> のように、 SMARTY_DIR 直下の pluginsや新規に作成したフォルダに自作プラグインを放り込む事で以下のように、plugins_dir[]メソッドを使ってパスを指定すれば使えました。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;?php
  $smarty-&gt;plugins_dir[] = &#39;includes/my_smarty_plugins&#39;;
@@ -69,7 +67,7 @@
 <p>これで、Smarty 3.1でも自作プラグインを他のディレクトリで管理出来るようになりますね。</p>
 </section>
 <section id="phphtml">
-<h2><span class="section-number">6.2. </span>PHPで出力したHTMLなどをファイルとして保存する<a class="headerlink" href="#phphtml" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">6.2. </span>PHPで出力したHTMLなどをファイルとして保存する<a class="headerlink" href="#phphtml" title="Link to this heading">¶</a></h2>
 <p>PHPで生成したHTMLやテキストはecho文やprint文で出力が出来ます。</p>
 <p>この標準出力されたHTMLやテキストをファイルとして保存する為には、ob_get_contents関数でバッファを作って、これをfopen関数とfwrite関数を使ってファイルとして保存します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;?php
@@ -97,7 +95,7 @@
 </div>
 </section>
 <section id="cakephpwarning-cake-core-cache-was-unable-to-write-cake-dev-ja-to-file-cache-in">
-<h2><span class="section-number">6.3. </span>【CakePHP】Warning: _cake_core_ cache was unable to write ‘cake_dev_ja’ to File cache in<a class="headerlink" href="#cakephpwarning-cake-core-cache-was-unable-to-write-cake-dev-ja-to-file-cache-in" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">6.3. </span>【CakePHP】Warning: _cake_core_ cache was unable to write ‘cake_dev_ja’ to File cache in<a class="headerlink" href="#cakephpwarning-cake-core-cache-was-unable-to-write-cake-dev-ja-to-file-cache-in" title="Link to this heading">¶</a></h2>
 <p>/app/tmp/cache</p>
 <p>/app/tmp/logs</p>
 <p>/app/tmp/cache/persistent/</p>
@@ -114,8 +112,9 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">目次</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">目次</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">6. PHP Hack</a><ul>
 <li><a class="reference internal" href="#smarty-3-1">6.1. Smarty 3.1ではプラグインの追加方法が変更されているので注意</a></li>
 <li><a class="reference internal" href="#phphtml">6.2. PHPで出力したHTMLなどをファイルとして保存する</a></li>
@@ -124,12 +123,17 @@
 </li>
 </ul>
 
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="tech005.html"
-                        title="前の章へ"><span class="section-number">5. </span>Python Hacks</a></p>
-  <h4>次のトピックへ</h4>
-  <p class="topless"><a href="tech007.html"
-                        title="次の章へ"><span class="section-number">7. </span>PlayOnLinux(Wine)で動作するソフトウェアまとめ</a></p>
+  </div>
+  <div>
+    <h4>前のトピックへ</h4>
+    <p class="topless"><a href="tech005.html"
+                          title="前の章へ"><span class="section-number">5. </span>Python Hacks</a></p>
+  </div>
+  <div>
+    <h4>次のトピックへ</h4>
+    <p class="topless"><a href="tech007.html"
+                          title="次の章へ"><span class="section-number">7. </span>PlayOnLinux(Wine)で動作するソフトウェアまとめ</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>このページ</h3>
     <ul class="this-page-menu">
@@ -146,7 +150,7 @@
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -168,8 +172,8 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, takamitsu_h.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    &#169; 著作権 2023, takamitsu_h.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

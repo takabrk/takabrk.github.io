@@ -1,20 +1,18 @@
-
 <!DOCTYPE html>
 
-<html lang="ja">
+<html lang="ja" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>19. カスタムカーネルについて &#8212; Valkyrie Linux Documentation 1.0.0 ドキュメント</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=514cf933" />
     
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script src="../_static/documentation_options.js?v=144c8c96"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4dbe4bdc"></script>
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -44,11 +42,11 @@
           <div class="body" role="main">
             
   <section id="id1">
-<h1><span class="section-number">19. </span>カスタムカーネルについて<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">19. </span>カスタムカーネルについて<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
 <p><a class="reference external" href="http://takabrk.seesaa.net/article/449185431.html">http://takabrk.seesaa.net/article/449185431.html</a></p>
 <p>This low latency kernel is for Ubuntu 16.04 LTS(64bit) and is aimed at processors after the Intel SandyBridge architecture by adding an aufs patch and CK2 patch,kernel_gcc patch to Linux Kernel.</p>
 <section id="id2">
-<h2><span class="section-number">19.1. </span>カスタムカーネルの作成<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">19.1. </span>カスタムカーネルの作成<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>64bit OS「Phantom Valkyrie Linux」用のカスタムカーネルを作成しました。フルインストール環境とLiveDVD環境で動作しています。</p>
 <p>Linuxカーネル4.11ベースでリアルタイムカーネルを作りたいのですが、まだRT Preempt(<a class="reference external" href="https://www.kernel.org/pub/linux/kernel/projects/rt/">https://www.kernel.org/pub/linux/kernel/projects/rt/</a>)のパッチが公開されていないようですので、取り敢えず、カーネルオプションでISDNやIEEE1394など明らかに現在の一般的なコンピューティングで使わないドライバとモジュールを外して、カーネルのファイル容量を減らしました。</p>
 <p>カスタムカーネルの作成方法は、昔からあるmakeを使う方法で行っています。</p>
@@ -103,7 +101,7 @@ $sudo apt-get build-dep linux-image-$(uname -r)
 </ul>
 </section>
 <section id="linux">
-<h2><span class="section-number">19.2. </span>Linuxカーネルのソースコードとパッチ<a class="headerlink" href="#linux" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">19.2. </span>Linuxカーネルのソースコードとパッチ<a class="headerlink" href="#linux" title="Link to this heading">¶</a></h2>
 <p>1.カーネルソースコード</p>
 <p><a class="reference external" href="https://www.kernel.org/">https://www.kernel.org/</a></p>
 <p>2.公式パッチ</p>
@@ -160,8 +158,9 @@ $git checkout origin/4.10/master
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">目次</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">目次</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">19. カスタムカーネルについて</a><ul>
 <li><a class="reference internal" href="#id2">19.1. カスタムカーネルの作成</a></li>
 <li><a class="reference internal" href="#linux">19.2. Linuxカーネルのソースコードとパッチ</a></li>
@@ -169,12 +168,17 @@ $git checkout origin/4.10/master
 </li>
 </ul>
 
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="valkyrie003.html"
-                        title="前の章へ"><span class="section-number">18. </span>トラブルが起こった時の対処法</a></p>
-  <h4>次のトピックへ</h4>
-  <p class="topless"><a href="valkyrie020.html"
-                        title="次の章へ"><span class="section-number">20. </span>過去の履歴</a></p>
+  </div>
+  <div>
+    <h4>前のトピックへ</h4>
+    <p class="topless"><a href="valkyrie003.html"
+                          title="前の章へ"><span class="section-number">18. </span>トラブルが起こった時の対処法</a></p>
+  </div>
+  <div>
+    <h4>次のトピックへ</h4>
+    <p class="topless"><a href="valkyrie020.html"
+                          title="次の章へ"><span class="section-number">20. </span>過去の履歴</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>このページ</h3>
     <ul class="this-page-menu">
@@ -191,7 +195,7 @@ $git checkout origin/4.10/master
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -213,8 +217,8 @@ $git checkout origin/4.10/master
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, takamitsu_h.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    &#169; 著作権 2023, takamitsu_h.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

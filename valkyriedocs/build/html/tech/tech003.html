@@ -1,20 +1,18 @@
-
 <!DOCTYPE html>
 
-<html lang="ja">
+<html lang="ja" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>3. Java Hacks &#8212; Valkyrie Linux Documentation 1.0.0 ドキュメント</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=514cf933" />
     
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script src="../_static/documentation_options.js?v=144c8c96"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4dbe4bdc"></script>
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -44,9 +42,9 @@
           <div class="body" role="main">
             
   <section id="java-hacks">
-<h1><span class="section-number">3. </span>Java Hacks<a class="headerlink" href="#java-hacks" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">3. </span>Java Hacks<a class="headerlink" href="#java-hacks" title="Link to this heading">¶</a></h1>
 <section id="processing-3eclipse">
-<h2><span class="section-number">3.1. </span>Processing 3をEclipseで使う<a class="headerlink" href="#processing-3eclipse" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">3.1. </span>Processing 3をEclipseで使う<a class="headerlink" href="#processing-3eclipse" title="Link to this heading">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1.Eclipseの「Help」→「Install New Software」からhttp://proclipsing.googlecode.com/svn/tags/current_releases/proclipsingSite/を登録して、Proclipsingプラグインをインストール
 2.[Window]-&gt;[Preference] で [Preferences]ダイアログを開き、左側のリストから Proclipsing を選択する。
 3.[Processing Path] のテキストフィールドに Processing をインストールしたパスを設定して、Applyボタンを押し、[OK]ボタンをクリックする。
@@ -58,7 +56,7 @@
 </div>
 </section>
 <section id="processing-with-eclipseopengl">
-<h2><span class="section-number">3.2. </span>Processing with EclipseでOpenGLを使う<a class="headerlink" href="#processing-with-eclipseopengl" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">3.2. </span>Processing with EclipseでOpenGLを使う<a class="headerlink" href="#processing-with-eclipseopengl" title="Link to this heading">¶</a></h2>
 <p>ProcessingをEclipseで使う場合に困ることはOpenGLの使い方が分かりにくいことです。Linux環境においてOpenGLをProcessing with Eclipseで使う方法を紹介します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1.Eclipseのworkspaceに任意のProcessing用フォルダを作成します。ここでは「processing」ディレクトリを作成したとします。
 2.processingフォルダにProcessingのサイトからLinux版のProcessingをダウンロードして解凍し、中身を全てprocessingフォルダに入れます。
@@ -70,7 +68,7 @@
 <p>これでProcesssing IDEのようにOpenGLを使ったProcessingアプリケーションを作成することが出来ます。</p>
 </section>
 <section id="swingguiprocessing">
-<h2><span class="section-number">3.3. </span>Swingで作成したGUIアプリケーションにProcessingアプリケーションを埋め込む方法<a class="headerlink" href="#swingguiprocessing" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">3.3. </span>Swingで作成したGUIアプリケーションにProcessingアプリケーションを埋め込む方法<a class="headerlink" href="#swingguiprocessing" title="Link to this heading">¶</a></h2>
 <p>Swingで作成したGUIアプリケーションとProcessingアプリケーションは別々に開発します。以下はSwingでGUIを作成する例です。JFrameを継承して作成します。ここではGUIアプリケーション「xxx」、Processingアプリケーション「yyy」とします。Processingアプリケーションを組み込むのは簡単で、まず、yyyの変数（ここではvd)を定義します。次にyyyのインスタンスを作成、「vd.init()」でProcessingアプリケーションを初期化します。あとはJPanelに込み込むために「add」関数を使ってパネルに組み込んでいます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -203,8 +201,9 @@ public class swing_gui extends JFrame{
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">目次</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">目次</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">3. Java Hacks</a><ul>
 <li><a class="reference internal" href="#processing-3eclipse">3.1. Processing 3をEclipseで使う</a></li>
 <li><a class="reference internal" href="#processing-with-eclipseopengl">3.2. Processing with EclipseでOpenGLを使う</a></li>
@@ -213,12 +212,17 @@ public class swing_gui extends JFrame{
 </li>
 </ul>
 
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="tech002.html"
-                        title="前の章へ"><span class="section-number">2. </span>CSS Hacks</a></p>
-  <h4>次のトピックへ</h4>
-  <p class="topless"><a href="tech004.html"
-                        title="次の章へ"><span class="section-number">4. </span>JavaScript Hack</a></p>
+  </div>
+  <div>
+    <h4>前のトピックへ</h4>
+    <p class="topless"><a href="tech002.html"
+                          title="前の章へ"><span class="section-number">2. </span>CSS Hacks</a></p>
+  </div>
+  <div>
+    <h4>次のトピックへ</h4>
+    <p class="topless"><a href="tech004.html"
+                          title="次の章へ"><span class="section-number">4. </span>JavaScript Hack</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>このページ</h3>
     <ul class="this-page-menu">
@@ -235,7 +239,7 @@ public class swing_gui extends JFrame{
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -257,8 +261,8 @@ public class swing_gui extends JFrame{
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, takamitsu_h.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    &#169; 著作権 2023, takamitsu_h.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

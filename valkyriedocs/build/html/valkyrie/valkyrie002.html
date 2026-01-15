@@ -1,25 +1,23 @@
-
 <!DOCTYPE html>
 
-<html lang="ja">
+<html lang="ja" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>9. コマンドランチャー「gmrun」の使い方 &#8212; Valkyrie Linux Documentation 1.0.0 ドキュメント</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=514cf933" />
     
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script src="../_static/documentation_options.js?v=144c8c96"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4dbe4bdc"></script>
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="18. トラブルが起こった時の対処法" href="valkyrie003.html" />
-    <link rel="prev" title="1. Valkyrie Linux" href="valkyrie001.html" /> 
+    <link rel="prev" title="1. UBOLD-OP" href="valkyrie001.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
@@ -31,7 +29,7 @@
           <a href="valkyrie003.html" title="18. トラブルが起こった時の対処法"
              accesskey="N">次へ</a> |</li>
         <li class="right" >
-          <a href="valkyrie001.html" title="1. Valkyrie Linux"
+          <a href="valkyrie001.html" title="1. UBOLD-OP"
              accesskey="P">前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Valkyrie Linux Documentation 1.0.0 ドキュメント</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">9. </span>コマンドランチャー「gmrun」の使い方</a></li> 
@@ -44,12 +42,12 @@
           <div class="body" role="main">
             
   <section id="gmrun">
-<h1><span class="section-number">9. </span>コマンドランチャー「gmrun」の使い方<a class="headerlink" href="#gmrun" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">9. </span>コマンドランチャー「gmrun」の使い方<a class="headerlink" href="#gmrun" title="Link to this heading">¶</a></h1>
 <p>ctrl+spaceでgmrunを起動出来ます。</p>
 <p>アプリケーションの名前を打って、Enterを押すとアプリケーション起動。Tabキーでキーワード補完を行ってくれます。</p>
 </section>
 <section id="linuxi-o">
-<h1><span class="section-number">10. </span>一時的にLinuxカーネルのI/Oスケジューラーを変更する方法<a class="headerlink" href="#linuxi-o" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">10. </span>一時的にLinuxカーネルのI/Oスケジューラーを変更する方法<a class="headerlink" href="#linuxi-o" title="Link to this heading">¶</a></h1>
 <p>Linuxカーネルには、様々なI/Oスケジューラーが用意されています。カーネルをソースコードからビルドする時に、I/Oスケジューラーを設定しておくのが一般的ですが、現在利用しているカーネルで一時的にI/Oスケジューラーの変更をしたい時には、以下のコマンドを使うと良いでしょう。</p>
 <p>sudo -- sh -c 'echo cfq &gt; /sys/block/sda/queue/scheduler'</p>
 <p>「cfq」の部分を「deadline」「noop」「bfq」という風に変更するだけです。</p>
@@ -61,21 +59,21 @@
 <p>他のコマンドも記述する場合は、半角スペースで区切っていきます。</p>
 </section>
 <section id="id1">
-<h1><span class="section-number">11. </span>サウンドサーバの切り替え<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">11. </span>サウンドサーバの切り替え<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
 <blockquote>
 <div><p>Phantom Valkyrie Linuxでは、ALSAに直接アクセスしてサウンドを出しています。一方で、PulseAudioやJack Audio Connection Kitといったサウンドサーバも搭載しており、OpenBoxの右クリックメニューで起動・停止などが出来ます。</p>
 <p>また、PulseとJackは、pulseaudio-module-jackを通して連携が出来るようになっています。この連携機能を使うには、PulseAudioを起動させた後に、Jackを起動させます。</p>
 </div></blockquote>
 </section>
 <section id="virtualbox">
-<h1><span class="section-number">12. </span>VirtualBoxの音の出し方<a class="headerlink" href="#virtualbox" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">12. </span>VirtualBoxの音の出し方<a class="headerlink" href="#virtualbox" title="Link to this heading">¶</a></h1>
 <blockquote>
 <div><p>ALSAだけでサウンドを出していますが、VirtualBoxでホストをALSAに設定しても音が出ません。
 その為、VirtualBoxのホストで設定する際には「PulseAudio」のままにして、Openboxの右クリックメニューからPulseAudioを起動させてからVirtualboxを起動させてください。</p>
 </div></blockquote>
 </section>
 <section id="alsa">
-<h1><span class="section-number">13. </span>ALSAの音量設定の保存方法<a class="headerlink" href="#alsa" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">13. </span>ALSAの音量設定の保存方法<a class="headerlink" href="#alsa" title="Link to this heading">¶</a></h1>
 <blockquote>
 <div><p>LinuxでのサウンドドライバはALSAですが、システム起動音などを調整して、その音量を永続的に保ちたい場合があります。alsactlというツールを使う事で音量設定の保存が可能です。</p>
 <p>1.alsamixerで音量を調整</p>
@@ -85,7 +83,7 @@
 </div></blockquote>
 </section>
 <section id="pulseaudiojack-audio-connection-kit">
-<h1><span class="section-number">14. </span>PulseAudioとJack Audio Connection KItとの連携<a class="headerlink" href="#pulseaudiojack-audio-connection-kit" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">14. </span>PulseAudioとJack Audio Connection KItとの連携<a class="headerlink" href="#pulseaudiojack-audio-connection-kit" title="Link to this heading">¶</a></h1>
 <blockquote>
 <div><p>コマンドでJackとPulseの連携は出来るようになっていますが、ALSAを直接使うアプリケーションではまだ音が出ていません。
 Qjackctlで予めpulseaudio-module-jackの設定を行っておきます。</p>
@@ -100,7 +98,7 @@ jack_controlを使ったコマンド例は以下の通りです。ALSAを直接�
 </div></blockquote>
 </section>
 <section id="amixer">
-<h1><span class="section-number">15. </span>amixerの設定コマンド<a class="headerlink" href="#amixer" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">15. </span>amixerの設定コマンド<a class="headerlink" href="#amixer" title="Link to this heading">¶</a></h1>
 <blockquote>
 <div><p>ミュートの切り替え</p>
 <p>amixer sset Master on</p>
@@ -114,7 +112,7 @@ jack_controlを使ったコマンド例は以下の通りです。ALSAを直接�
 </div></blockquote>
 </section>
 <section id="smplayer-mpv-youtube-dl1080p60fpsgpu">
-<h1><span class="section-number">16. </span>SMPlayer+MPV+youtube-dlで動画共有サイトの1080p60fps動画をGPUの動画支援機能で動作させる<a class="headerlink" href="#smplayer-mpv-youtube-dl1080p60fpsgpu" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">16. </span>SMPlayer+MPV+youtube-dlで動画共有サイトの1080p60fps動画をGPUの動画支援機能で動作させる<a class="headerlink" href="#smplayer-mpv-youtube-dl1080p60fpsgpu" title="Link to this heading">¶</a></h1>
 <blockquote>
 <div><p>Ubuntu環境でSMPlayerを使っている人は多いと思います。この環境を活用して、MPVやyoutube-dlと連携させて、Youtubeなどの動画共有サイトで公開されている1080p60fpsの動画をGPUの動画支援機能で動作させる事が可能です。Webブラウザで視聴するよりも消費電力が低くなるのが利点です。</p>
 <p>◇環境
@@ -144,7 +142,7 @@ CPU : Celeron G 3900（2.8GHzデュアルコア、Skylake）</p>
 </div></blockquote>
 </section>
 <section id="betachromiumwidevinegoogle-api">
-<h1><span class="section-number">17. </span>Beta版ChromiumでWidevineとGoogle APIを使えるようにする<a class="headerlink" href="#betachromiumwidevinegoogle-api" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">17. </span>Beta版ChromiumでWidevineとGoogle APIを使えるようにする<a class="headerlink" href="#betachromiumwidevinegoogle-api" title="Link to this heading">¶</a></h1>
 <blockquote>
 <div><p>1.Phantom Valkyrie Linuxには、Chromium beta channel PPAを追加していますが、デフォルトではオフになっています。Synapticパッケージマネージャーの「設定」→「リポジトリ」→「他のソフトウェア」にある「<a class="reference external" href="http://ppa.launchpad.net/saiarcot895/chromium-beta/ubuntu">http://ppa.launchpad.net/saiarcot895/chromium-beta/ubuntu</a>」にチェックを入れて、再読み込みを行えば、Beta版Chromiumがインストール出来るようになります。</p>
 <p>Widevineは、有料オンデマンドサービスで公開されている映像をChromiumで視聴する場合に必要なプラグインです。</p>
@@ -181,8 +179,9 @@ $sudo cp -a libwidevinecdmadapter.so /usr/lib/chromium-browser
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">目次</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">目次</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">9. コマンドランチャー「gmrun」の使い方</a></li>
 <li><a class="reference internal" href="#linuxi-o">10. 一時的にLinuxカーネルのI/Oスケジューラーを変更する方法</a></li>
 <li><a class="reference internal" href="#id1">11. サウンドサーバの切り替え</a></li>
@@ -194,12 +193,17 @@ $sudo cp -a libwidevinecdmadapter.so /usr/lib/chromium-browser
 <li><a class="reference internal" href="#betachromiumwidevinegoogle-api">17. Beta版ChromiumでWidevineとGoogle APIを使えるようにする</a></li>
 </ul>
 
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="valkyrie001.html"
-                        title="前の章へ"><span class="section-number">1. </span>Valkyrie Linux</a></p>
-  <h4>次のトピックへ</h4>
-  <p class="topless"><a href="valkyrie003.html"
-                        title="次の章へ"><span class="section-number">18. </span>トラブルが起こった時の対処法</a></p>
+  </div>
+  <div>
+    <h4>前のトピックへ</h4>
+    <p class="topless"><a href="valkyrie001.html"
+                          title="前の章へ"><span class="section-number">1. </span>UBOLD-OP</a></p>
+  </div>
+  <div>
+    <h4>次のトピックへ</h4>
+    <p class="topless"><a href="valkyrie003.html"
+                          title="次の章へ"><span class="section-number">18. </span>トラブルが起こった時の対処法</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>このページ</h3>
     <ul class="this-page-menu">
@@ -216,7 +220,7 @@ $sudo cp -a libwidevinecdmadapter.so /usr/lib/chromium-browser
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -231,15 +235,15 @@ $sudo cp -a libwidevinecdmadapter.so /usr/lib/chromium-browser
           <a href="valkyrie003.html" title="18. トラブルが起こった時の対処法"
              >次へ</a> |</li>
         <li class="right" >
-          <a href="valkyrie001.html" title="1. Valkyrie Linux"
+          <a href="valkyrie001.html" title="1. UBOLD-OP"
              >前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Valkyrie Linux Documentation 1.0.0 ドキュメント</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">9. </span>コマンドランチャー「gmrun」の使い方</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, takamitsu_h.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    &#169; 著作権 2023, takamitsu_h.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

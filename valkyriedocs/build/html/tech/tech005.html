@@ -1,20 +1,18 @@
-
 <!DOCTYPE html>
 
-<html lang="ja">
+<html lang="ja" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>5. Python Hacks &#8212; Valkyrie Linux Documentation 1.0.0 ドキュメント</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=514cf933" />
     
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script src="../_static/documentation_options.js?v=144c8c96"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4dbe4bdc"></script>
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -44,9 +42,9 @@
           <div class="body" role="main">
             
   <section id="python-hacks">
-<h1><span class="section-number">5. </span>Python Hacks<a class="headerlink" href="#python-hacks" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">5. </span>Python Hacks<a class="headerlink" href="#python-hacks" title="Link to this heading">¶</a></h1>
 <section id="ubuntupythonpython3">
-<h2><span class="section-number">5.1. </span>UbuntuでPythonのバージョンをPython3をメインにする<a class="headerlink" href="#ubuntupythonpython3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.1. </span>UbuntuでPythonのバージョンをPython3をメインにする<a class="headerlink" href="#ubuntupythonpython3" title="Link to this heading">¶</a></h2>
 <p>Ubuntuでバージョンを切り替えるには、以下のコマンドを入力して実行を行えば良いでしょう。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">update</span><span class="o">-</span><span class="n">alternatives</span> <span class="o">--</span><span class="n">install</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python</span> <span class="n">python</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python2</span><span class="mf">.7</span> <span class="mi">1</span>
 <span class="n">sudo</span> <span class="n">update</span><span class="o">-</span><span class="n">alternatives</span> <span class="o">--</span><span class="n">install</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python</span> <span class="n">python</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python3</span><span class="mf">.4</span> <span class="mi">2</span>
@@ -58,7 +56,7 @@
 </div>
 </section>
 <section id="python">
-<h2><span class="section-number">5.2. </span>Pythonを使う際に便利なライブラリとテクニック<a class="headerlink" href="#python" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.2. </span>Pythonを使う際に便利なライブラリとテクニック<a class="headerlink" href="#python" title="Link to this heading">¶</a></h2>
 <p>◎Pythonドキュメント</p>
 <p><a class="reference external" href="https://www.python.org/doc/">https://www.python.org/doc/</a></p>
 <p>プログラミング言語「Python」の公式サイトに掲載されている言語ドキュメントです。</p>
@@ -365,7 +363,7 @@ os.environ[‘HOME’]
 </div>
 </section>
 <section id="ospython">
-<h2><span class="section-number">5.3. </span>OSの情報をPythonでダイアログ表示させる方法<a class="headerlink" href="#ospython" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.3. </span>OSの情報をPythonでダイアログ表示させる方法<a class="headerlink" href="#ospython" title="Link to this heading">¶</a></h2>
 <p>OSの情報をPythonでダイアログ表示させるには、Tkとsubprocessモジュールを使えば、実現出来ます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
 <span class="c1">#-*- coding:utf-8 -*-</span>
@@ -386,7 +384,7 @@ os.environ[‘HOME’]
 <p>cmd1とcmd2は、シェルコマンドを入れておきます。シェルの出力結果を文字列として取得するのが、subprocess.check_outです。後は、tkMessageBox.showinfo を使ってダイアログ表示させます。</p>
 </section>
 <section id="id1">
-<h2><span class="section-number">5.4. </span>並列処理で無名関数を使う<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.4. </span>並列処理で無名関数を使う<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
 <p><a class="reference external" href="http://stackoverflow.com/questions/35244577/is-it-possible-to-use-an-inline-function-in-a-thread-call">http://stackoverflow.com/questions/35244577/is-it-possible-to-use-an-inline-function-in-a-thread-call</a></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">a</span> <span class="k">lambda</span> <span class="n">function</span> <span class="ow">in</span> <span class="n">Python</span> <span class="mf">3.</span><span class="n">x</span>
 
@@ -426,7 +424,7 @@ os.environ[‘HOME’]
 <p>subprocess.callなどでシェル経由でプログラムを動作させる場合に便利です。何れの場合も、工夫をすれば、一文で処理の設定が出来ます。</p>
 </section>
 <section id="pipmatplotlib">
-<h2><span class="section-number">5.5. </span>PIP経由でmatplotlibをインストールしても可視化してくれない場合の対処法<a class="headerlink" href="#pipmatplotlib" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.5. </span>PIP経由でmatplotlibをインストールしても可視化してくれない場合の対処法<a class="headerlink" href="#pipmatplotlib" title="Link to this heading">¶</a></h2>
 <p>matplotlibは、データを可視化してくれる便利なライブラリです。</p>
 <p>しかし、PIP経由でインストールしてshowメソッドを使っても表示してくれない事があります。この原因は、matplotlibがpython-tkに依存している為ですので、python-tkをインストールしてからmatplotlibを再インストールすれば、可視化が出来るようになります。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$sudo apt-get install python-tk python3-tk
@@ -438,7 +436,7 @@ $sudo pip3 install --no-cache-dir -I matplotlib
 </div>
 </section>
 <section id="pipstatsmodels">
-<h2><span class="section-number">5.6. </span>PIP経由でstatsmodelsがインストールが出来ない時の対処法<a class="headerlink" href="#pipstatsmodels" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.6. </span>PIP経由でstatsmodelsがインストールが出来ない時の対処法<a class="headerlink" href="#pipstatsmodels" title="Link to this heading">¶</a></h2>
 <p>Pythonで線形回帰を行う時に便利なのがstatsmodelsというライブラリです。</p>
 <p>しかし、PIPでインストールすると以下のようなエラーが出る事があります。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">statsmodels</span><span class="o">/</span><span class="n">nonparametric</span><span class="o">/</span><span class="n">_smoothers_lowess</span><span class="o">.</span><span class="n">c</span><span class="p">:</span><span class="mi">8</span><span class="p">:</span><span class="mi">22</span><span class="p">:</span> <span class="n">fatal</span> <span class="n">error</span><span class="p">:</span> <span class="n">pyconfig</span><span class="o">.</span><span class="n">h</span><span class="p">:</span> <span class="n">そのようなファイルやディレクトリはありません</span>
@@ -463,7 +461,7 @@ $sudo pip3 install --no-cache-dir statsmodels
 </div>
 </section>
 <section id="wsgicgi">
-<h2><span class="section-number">5.7. </span>WSGIアプリケーションをCGIプログラムとして動作させる<a class="headerlink" href="#wsgicgi" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.7. </span>WSGIアプリケーションをCGIプログラムとして動作させる<a class="headerlink" href="#wsgicgi" title="Link to this heading">¶</a></h2>
 <p>WSGIは、Pythonにおいて、Javaのサーブレットのような仕組みを実現させるものです。PythonだけでWebサーバ経由でWSGIアプリケーションを動作させる事が可能であり、Apacheにmod_wsgiモジュールを組み込んでいれば、Apache上でWSGIアプリケーションが動作します。
 一方で、サーバにはmod_wsgiが組み込まれていない事がありますので、代わりにCGIプログラムとしてWSGIアプリケーションとして動作させる事が出来ます。 以下のようなスクリプトファイルがあったとします。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
@@ -490,7 +488,7 @@ $sudo pip3 install --no-cache-dir statsmodels
 </div>
 </section>
 <section id="beautiful-souphtml">
-<h2><span class="section-number">5.8. </span>Beautiful Soupを使ってHTMLを組み立てる<a class="headerlink" href="#beautiful-souphtml" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.8. </span>Beautiful Soupを使ってHTMLを組み立てる<a class="headerlink" href="#beautiful-souphtml" title="Link to this heading">¶</a></h2>
 <p>PythonのHTMLパーサ「Beautiful Soup」を使ってHTMLを組み立ててみました。 Beautiful Soupが入っているフォルダは、PIPを使わずに、テストページと同じディレクトリに設置しています。 htmlタグやbodyタグなど基本的な要素は予めhtml変数に持たせています。 insertメソッドで要素を追加、Tag関数で追加したい要素の指定、NavigableStringで文字列の追加を行っています。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
 <span class="c1">#-*- coding:utf-8 -*-</span>
@@ -554,7 +552,7 @@ $sudo pip3 install --no-cache-dir statsmodels
 </div>
 </section>
 <section id="id2">
-<h2><span class="section-number">5.9. </span>Pythonライブラリ/モジュール<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.9. </span>Pythonライブラリ/モジュール<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <blockquote>
 <div><p><a class="reference external" href="http://www.pyglet.org/">Pyglet</a></p>
 <p>画像・動画・音楽・音声を再生するために使用するモジュール</p>
@@ -567,7 +565,7 @@ $sudo pip3 install --no-cache-dir statsmodels
 </div></blockquote>
 </section>
 <section id="with">
-<h2><span class="section-number">5.10. </span>withの使い方<a class="headerlink" href="#with" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.10. </span>withの使い方<a class="headerlink" href="#with" title="Link to this heading">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;sample.txt&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;xxx&quot;</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -580,7 +578,7 @@ $sudo pip3 install --no-cache-dir statsmodels
 </div>
 </section>
 <section id="id3">
-<h2><span class="section-number">5.11. </span>特定のキーを指定してリストをソートする<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.11. </span>特定のキーを指定してリストをソートする<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>以下のようなリストがあるとする。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tdata</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">)]</span>
 </pre></div>
@@ -600,7 +598,7 @@ $sudo pip3 install --no-cache-dir statsmodels
 </div>
 </section>
 <section id="sqlitepython">
-<h2><span class="section-number">5.12. </span>SQLiteで作成したテーブルのデータをPythonのリストにする方法<a class="headerlink" href="#sqlitepython" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.12. </span>SQLiteで作成したテーブルのデータをPythonのリストにする方法<a class="headerlink" href="#sqlitepython" title="Link to this heading">¶</a></h2>
 <p>社員というテーブルに(名前,社員番号、年齢、社員ID)というインデックスを作ります。Pythonのsqlite3モジュールを使って作成してもいいですが、確実にデータベースを作成したいなら、GUI操作出来るソフトウェアの導入をお薦めします。
 Firefoxには「sqlite-manager」というアドオンを使うとPHPのphpMyAdminのような操作でSQLiteで作成したデータベースのデータ管理がやりやすくなります。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
@@ -621,7 +619,7 @@ Firefoxには「sqlite-manager」というアドオンを使うとPHPのphpMyAdm
 </div>
 </section>
 <section id="id4">
-<h2><span class="section-number">5.13. </span>数字の各桁の数字を算出する方法<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.13. </span>数字の各桁の数字を算出する方法<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
 <p>数字の各桁の数字を算出するには以下のようにします。ここでは「3125」という数字があるとします。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">3125</span><span class="o">/</span><span class="mi">1000</span> <span class="c1">#千の位</span>
 <span class="mi">3125</span><span class="o">%</span><span class="mi">1000</span><span class="o">/</span><span class="mi">100</span> <span class="c1">#百の位</span>
@@ -631,7 +629,7 @@ Firefoxには「sqlite-manager」というアドオンを使うとPHPのphpMyAdm
 </div>
 </section>
 <section id="id5">
-<h2><span class="section-number">5.14. </span>除法の結果で小数点の切り捨てを回避する方法<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.14. </span>除法の結果で小数点の切り捨てを回避する方法<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
 <p>Pythonでは除法を使うと、結果の小数点が切り捨てられます。これを回避したい場合（確率計算などをする場合など）は以下のようにします。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span>
 <span class="mf">4.0</span><span class="o">/</span><span class="mi">100</span>
@@ -640,7 +638,7 @@ Firefoxには「sqlite-manager」というアドオンを使うとPHPのphpMyAdm
 <p>これらの結果は「0.04」となります。</p>
 </section>
 <section id="id6">
-<h2><span class="section-number">5.15. </span>ループを使って各桁の組み合わせで数字を作る方法<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.15. </span>ループを使って各桁の組み合わせで数字を作る方法<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
 <p>百の位、十の位、一の位の各桁のリストがある場合、これらを使って3桁の数字のリストを作るには以下のようにします。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">num2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
@@ -654,7 +652,7 @@ Firefoxには「sqlite-manager」というアドオンを使うとPHPのphpMyAdm
 </div>
 </section>
 <section id="id7">
-<h2><span class="section-number">5.16. </span>確実にリストから要素を取り除く方法<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.16. </span>確実にリストから要素を取り除く方法<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
 <p>ループ内でremoveメソッドなどでリストから要素を取り除くと「list out of range」などというエラーメッセージが出ることがあります。
 これを回避するには以下のように書くとうまくいきます。
 num1,num2というリストがあるとき、num2からnum1と同じ要素を取り除く場合、以下のようにtry～except文を使います。:</p>
@@ -666,7 +664,7 @@ num1,num2というリストがあるとき、num2からnum1と同じ要素を取
 </div>
 </section>
 <section id="lambda">
-<h2><span class="section-number">5.17. </span>1要素がタプルになっているリストをlambda式を使った降順にソートする<a class="headerlink" href="#lambda" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.17. </span>1要素がタプルになっているリストをlambda式を使った降順にソートする<a class="headerlink" href="#lambda" title="Link to this heading">¶</a></h2>
 <p>unma = [(4,4),(3,1),(6,0),(5,3),(1,10),(2,3),(3,8)]を各タプルの第1項で降順ソートするには以下のようにします。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">unma</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">cmp</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">:</span><span class="n">cmp</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
@@ -677,11 +675,11 @@ num1,num2というリストがあるとき、num2からnum1と同じ要素を取
 </div>
 </section>
 <section id="id8">
-<h2><span class="section-number">5.18. </span>Pythonのバージョンを切り替える<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.18. </span>Pythonのバージョンを切り替える<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
 <p>Pythonのバージョンを切り替えるには、「/usr/local/bin」の直下にあるpython-config,pythonを切り替えたいバージョンのシンボリックリンクに変更することで出来ます。元のPythonやpython-configは「/usr/bin」にあります。</p>
 </section>
 <section id="id9">
-<h2><span class="section-number">5.19. </span>Pythonの標準関数を無効化するスクリプト<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.19. </span>Pythonの標準関数を無効化するスクリプト<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
 <p>「__builtins__ = 0」と打ち込むだけで、Pythonの標準関数を無効化することが出来ます。</p>
 <p>Pythonのリスト内包表記:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nums_mini</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
@@ -720,7 +718,7 @@ num1,num2というリストがあるとき、num2からnum1と同じ要素を取
 </div>
 </section>
 <section id="processingjython">
-<h2><span class="section-number">5.20. </span>ProcessingのプログラムをJythonに移植するためのテンプレート<a class="headerlink" href="#processingjython" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.20. </span>ProcessingのプログラムをJythonに移植するためのテンプレート<a class="headerlink" href="#processingjython" title="Link to this heading">¶</a></h2>
 <blockquote>
 <div><p>#Swingを読み込む
 from javax.swing import JFrame
@@ -773,7 +771,7 @@ frame.visible = 1</p>
 <p>ライブラリの呼び出し方はProcessingのJavaモードに準拠しているようです。後はJythonの文法でProcessingのプログラムを書いていくことが出来ます。Processingの関数には必ず「self」を追記する必要があります。また、事前にSwing、Processingのcoreライブラリを呼び出す必要があります。coreライブラリは環境変数のPathで関連付けておく必要があります。JythonファイルはShift-JISで保存してください。</p>
 </section>
 <section id="id10">
-<h2><span class="section-number">5.21. </span>Beautiful Soupを使ってHTMLを組み立てる<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">5.21. </span>Beautiful Soupを使ってHTMLを組み立てる<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
 <p>PythonのHTMLパーサ「Beautiful Soup」を使ってHTMLを組み立ててみました。</p>
 <p>Beautiful Soupが入っているフォルダは、PIPを使わずに、テストページと同じディレクトリに設置しています。</p>
 <p>htmlタグやbodyタグなど基本的な要素は予めhtml変数に持たせています。</p>
@@ -842,8 +840,9 @@ frame.visible = 1</p>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">目次</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">目次</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">5. Python Hacks</a><ul>
 <li><a class="reference internal" href="#ubuntupythonpython3">5.1. UbuntuでPythonのバージョンをPython3をメインにする</a></li>
 <li><a class="reference internal" href="#python">5.2. Pythonを使う際に便利なライブラリとテクニック</a></li>
@@ -870,12 +869,17 @@ frame.visible = 1</p>
 </li>
 </ul>
 
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="tech004.html"
-                        title="前の章へ"><span class="section-number">4. </span>JavaScript Hack</a></p>
-  <h4>次のトピックへ</h4>
-  <p class="topless"><a href="tech006.html"
-                        title="次の章へ"><span class="section-number">6. </span>PHP Hack</a></p>
+  </div>
+  <div>
+    <h4>前のトピックへ</h4>
+    <p class="topless"><a href="tech004.html"
+                          title="前の章へ"><span class="section-number">4. </span>JavaScript Hack</a></p>
+  </div>
+  <div>
+    <h4>次のトピックへ</h4>
+    <p class="topless"><a href="tech006.html"
+                          title="次の章へ"><span class="section-number">6. </span>PHP Hack</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>このページ</h3>
     <ul class="this-page-menu">
@@ -892,7 +896,7 @@ frame.visible = 1</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -914,8 +918,8 @@ frame.visible = 1</p>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, takamitsu_h.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    &#169; 著作権 2023, takamitsu_h.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

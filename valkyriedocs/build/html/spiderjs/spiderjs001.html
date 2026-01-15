@@ -1,20 +1,18 @@
-
 <!DOCTYPE html>
 
-<html lang="ja">
+<html lang="ja" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>1. spider.js &#8212; Valkyrie Linux Documentation 1.0.0 ドキュメント</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=514cf933" />
     
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script src="../_static/documentation_options.js?v=144c8c96"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4dbe4bdc"></script>
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -44,7 +42,7 @@
           <div class="body" role="main">
             
   <section id="spider-js">
-<h1><span class="section-number">1. </span>spider.js<a class="headerlink" href="#spider-js" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">1. </span>spider.js<a class="headerlink" href="#spider-js" title="Link to this heading">¶</a></h1>
 <p>spider.jsは、JavaScriptライブラリであり、以下のような機能を持っています。</p>
 <ul class="simple">
 <li><p>Ajaxによる非同期通信</p></li>
@@ -78,13 +76,13 @@
 <li><p>CSS Spritesを使った処理</p></li>
 </ul>
 <section id="id1">
-<h2><span class="section-number">1.1. </span>spider.jsを使う<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">1.1. </span>spider.jsを使う<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
 <section id="id2">
-<h3><span class="section-number">1.1.1. </span>spider.jsの呼び出し方<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3><span class="section-number">1.1.1. </span>spider.jsの呼び出し方<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
 <p>HTMLのソースコードに&lt;script type=&quot;text/javascript&quot; src = &quot;Spider/spider.js&quot;&gt;&lt;/script&gt;を記述して呼び出す。</p>
 </section>
 <section id="load">
-<h3><span class="section-number">1.1.2. </span>load関数<a class="headerlink" href="#load" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3><span class="section-number">1.1.2. </span>load関数<a class="headerlink" href="#load" title="Link to this heading">¶</a></h3>
 <p>ページを読み込んでから、処理を行います。spider.jsを使う場合には、必須の関数となっています。load関数の中に処理したい内容を関数として設定しておきます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">load</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="n">処理</span><span class="p">});</span>
 </pre></div>
@@ -107,7 +105,7 @@ xxx.js:</p>
 </div>
 </section>
 <section id="javascript">
-<h3><span class="section-number">1.1.3. </span>JavaScriptの関数・メソッド・プロパティのショートカット<a class="headerlink" href="#javascript" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3><span class="section-number">1.1.3. </span>JavaScriptの関数・メソッド・プロパティのショートカット<a class="headerlink" href="#javascript" title="Link to this heading">¶</a></h3>
 <p>JavaScript標準の関数、メソッド、プロパティ名は長いのでショートカットを定義しています。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>let ver = &quot;20160202&quot;,
 $w = window,
@@ -134,7 +132,7 @@ let $lp = (&quot;https:&quot; == $d.location.protocol) ? &quot;https://ssl&quot;
 </div>
 </section>
 <section id="spider">
-<h3><span class="section-number">1.1.4. </span>Spiderクラス<a class="headerlink" href="#spider" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3><span class="section-number">1.1.4. </span>Spiderクラス<a class="headerlink" href="#spider" title="Link to this heading">¶</a></h3>
 <p>Spiderクラスを生成することで、様々な機能をWebページにつけることが出来ます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>let s = new spider(&quot;&quot;);
 let s = spider(&quot;&quot;); どちらを使っても構いません。
@@ -142,7 +140,7 @@ let s = spider(&quot;&quot;); どちらを使っても構いません。
 </div>
 </section>
 <section id="id3">
-<h3><span class="section-number">1.1.5. </span>チェーンメソッド<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3><span class="section-number">1.1.5. </span>チェーンメソッド<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
 <p>spider.jsは、ほとんどのメソッドでチェーンメソッドに対応しています。
 ＜例＞:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;display&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">font</span><span class="p">(</span><span class="s2">&quot;10pt&quot;</span><span class="p">,</span><span class="s2">&quot;#ffffff&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">date</span><span class="p">()</span><span class="o">.</span><span class="n">infoB</span><span class="p">()</span><span class="o">.</span><span class="n">infoS</span><span class="p">()</span><span class="o">.</span><span class="n">matrixEffect</span><span class="p">();</span>
@@ -161,37 +159,37 @@ let s = spider(&quot;&quot;); どちらを使っても構いません。
 </section>
 </section>
 <section id="id4">
-<h1><span class="section-number">2. </span>メソッド<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">2. </span>メソッド<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h1>
 <section id="require">
-<h2><span class="section-number">2.1. </span>require<a class="headerlink" href="#require" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.1. </span>require<a class="headerlink" href="#require" title="Link to this heading">¶</a></h2>
 <p>requireメソッドは、JavaScript、CSS、PHP、CGIの外部ファイルを読み込みます。単独で呼び出したい時に使う事が多いです。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>spider(&quot;&quot;).require(JavaScript・CGI・PHP・CSSの外部ファイル名);
 </pre></div>
 </div>
 </section>
 <section id="addelement">
-<h2><span class="section-number">2.2. </span>addElement<a class="headerlink" href="#addelement" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.2. </span>addElement<a class="headerlink" href="#addelement" title="Link to this heading">¶</a></h2>
 <p>特定の要素に新しい要素を追加する:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">,</span><span class="n">document</span><span class="o">.</span><span class="n">body</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
 <section id="addlistener">
-<h2><span class="section-number">2.3. </span>addListener<a class="headerlink" href="#addlistener" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.3. </span>addListener<a class="headerlink" href="#addlistener" title="Link to this heading">¶</a></h2>
 <p>イベントハンドラを追加する:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">addListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="n">func</span><span class="p">,</span><span class="n">false</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
 <section id="removelistener">
-<h2><span class="section-number">2.4. </span>removeListener<a class="headerlink" href="#removelistener" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.4. </span>removeListener<a class="headerlink" href="#removelistener" title="Link to this heading">¶</a></h2>
 <p>イベントハンドラを削除する:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">removeListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="n">func</span><span class="p">,</span><span class="n">false</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
 <section id="click">
-<h2><span class="section-number">2.5. </span>click<a class="headerlink" href="#click" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.5. </span>click<a class="headerlink" href="#click" title="Link to this heading">¶</a></h2>
 <p>マウスでクリックしたり、スタイラスペンでタップすると処理を行うことが出来ます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="n">id名</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span><span class="n">処理</span><span class="p">});</span>
 </pre></div>
@@ -199,7 +197,7 @@ let s = spider(&quot;&quot;); どちらを使っても構いません。
 <p>id名に「div0」なととした場合は「divエレメント」の1番目の物を指します。:</p>
 </section>
 <section id="mouseover">
-<h2><span class="section-number">2.6. </span>mouseover<a class="headerlink" href="#mouseover" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.6. </span>mouseover<a class="headerlink" href="#mouseover" title="Link to this heading">¶</a></h2>
 <dl class="simple">
 <dt>マウスオーバーすると処理を実行出来ます。::</dt><dd><p>spider(id名).mouseover(function(){処理});
 id名に「div0」などとした場合は「divエレメント」の1番目を指します。</p>
@@ -207,7 +205,7 @@ id名に「div0」などとした場合は「divエレメント」の1番目を�
 </dl>
 </section>
 <section id="mouseout">
-<h2><span class="section-number">2.7. </span>mouseout<a class="headerlink" href="#mouseout" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.7. </span>mouseout<a class="headerlink" href="#mouseout" title="Link to this heading">¶</a></h2>
 <p>マウスアウトすると処理を実行する。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="n">id名</span><span class="p">)</span><span class="o">.</span><span class="n">mouseout</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span><span class="n">処理</span><span class="p">});</span>
 </pre></div>
@@ -215,7 +213,7 @@ id名に「div0」などとした場合は「divエレメント」の1番目を�
 <p>id名に「div0」などとした場合は「divエレメント」の1番目を指します。</p>
 </section>
 <section id="mousemove">
-<h2><span class="section-number">2.8. </span>mousemove<a class="headerlink" href="#mousemove" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.8. </span>mousemove<a class="headerlink" href="#mousemove" title="Link to this heading">¶</a></h2>
 <p>マウスが動いているときに処理を実行します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="n">id名</span><span class="p">)</span><span class="o">.</span><span class="n">mousemove</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span><span class="n">処理</span><span class="p">});</span>
 </pre></div>
@@ -223,7 +221,7 @@ id名に「div0」などとした場合は「divエレメント」の1番目を�
 <p>id名に「div0」などとした場合は「divエレメント」の1番目を指します。</p>
 </section>
 <section id="mouseup">
-<h2><span class="section-number">2.9. </span>mouseup<a class="headerlink" href="#mouseup" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.9. </span>mouseup<a class="headerlink" href="#mouseup" title="Link to this heading">¶</a></h2>
 <p>マウスボタンが上がっているときに処理を行います。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="n">id名</span><span class="p">)</span><span class="o">.</span><span class="n">mouseup</span><span class="p">(</span><span class="n">id名</span><span class="p">,</span><span class="n">function</span><span class="p">(){</span><span class="n">処理</span><span class="p">});</span>
 </pre></div>
@@ -231,7 +229,7 @@ id名に「div0」などとした場合は「divエレメント」の1番目を�
 <p>id名に「div0」などとした場合は「divエレメント」の1番目を指します。</p>
 </section>
 <section id="mousedown">
-<h2><span class="section-number">2.10. </span>mousedown<a class="headerlink" href="#mousedown" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.10. </span>mousedown<a class="headerlink" href="#mousedown" title="Link to this heading">¶</a></h2>
 <p>マウスボタンを押したときに処理を行います。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="n">id名</span><span class="p">)</span><span class="o">.</span><span class="n">mousedown</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span><span class="n">処理</span><span class="p">});</span>
 </pre></div>
@@ -239,7 +237,7 @@ id名に「div0」などとした場合は「divエレメント」の1番目を�
 <p>id名に「div0」などとした場合は「divエレメント」の1番目を指します。</p>
 </section>
 <section id="keydown">
-<h2><span class="section-number">2.11. </span>keydown<a class="headerlink" href="#keydown" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.11. </span>keydown<a class="headerlink" href="#keydown" title="Link to this heading">¶</a></h2>
 <p>キーボードのキーを押すと処理を行います。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="n">id名</span><span class="p">)</span><span class="o">.</span><span class="n">keydown</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span><span class="n">処理</span><span class="p">});</span>
 </pre></div>
@@ -247,28 +245,28 @@ id名に「div0」などとした場合は「divエレメント」の1番目を�
 <p>id名に「div0」などとした場合は「divエレメント」の1番目を指します。</p>
 </section>
 <section id="scroll">
-<h2><span class="section-number">2.12. </span>scroll<a class="headerlink" href="#scroll" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.12. </span>scroll<a class="headerlink" href="#scroll" title="Link to this heading">¶</a></h2>
 <p>スクロールをした時の処理を実行させる事が出来ます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;window&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span><span class="n">処理</span><span class="p">});</span>
 </pre></div>
 </div>
 </section>
 <section id="scrollanim">
-<h2><span class="section-number">2.13. </span>scrollanim<a class="headerlink" href="#scrollanim" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.13. </span>scrollanim<a class="headerlink" href="#scrollanim" title="Link to this heading">¶</a></h2>
 <p>一定の場所までスクロールした時にフワッとコンテンツを表示させる事が可能です。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="n">id名</span><span class="p">)</span><span class="o">.</span><span class="n">scrollanim</span><span class="p">();</span>
 </pre></div>
 </div>
 </section>
 <section id="scrollto">
-<h2><span class="section-number">2.14. </span>scrollto<a class="headerlink" href="#scrollto" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.14. </span>scrollto<a class="headerlink" href="#scrollto" title="Link to this heading">¶</a></h2>
 <p>idを指定した要素に移動します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">scrollto</span><span class="p">(</span><span class="n">id名</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
 <section id="html">
-<h2><span class="section-number">2.15. </span>html<a class="headerlink" href="#html" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.15. </span>html<a class="headerlink" href="#html" title="Link to this heading">¶</a></h2>
 <p>HTML・文字列を挿入したり、外部のWebサイトを表示したり、Ajaxでテキストデータを取得して表示することが出来ます。</p>
 <img alt="img/layer_css_html.jpg" src="img/layer_css_html.jpg" />
 <p>赤いレイヤーには、「テスト」文字列が挿入されており、緑のレイヤーには外部ページが挿入されています。</p>
@@ -326,7 +324,7 @@ Ajaxを使いますと、URLはそのままで外部ページなどを非同期�
 </div>
 </section>
 <section id="tool">
-<h2><span class="section-number">2.16. </span>tool<a class="headerlink" href="#tool" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.16. </span>tool<a class="headerlink" href="#tool" title="Link to this heading">¶</a></h2>
 <p>様々な要素を追加する事が出来ます。</p>
 <p>1.HTMLのリストの項目を増やすこと出来る:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;ami&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">tool</span><span class="p">(</span><span class="s2">&quot;appendMenuItem&quot;</span><span class="p">,{</span><span class="n">url</span><span class="p">:</span><span class="s2">&quot;ddd.com&quot;</span><span class="p">,</span><span class="n">menuitem</span><span class="p">:</span><span class="s2">&quot;ccc&quot;</span><span class="p">});</span>
@@ -479,7 +477,7 @@ Ajaxを使いますと、URLはそのままで外部ページなどを非同期�
 </div>
 </section>
 <section id="createlayer">
-<h2><span class="section-number">2.17. </span>createLayer<a class="headerlink" href="#createlayer" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.17. </span>createLayer<a class="headerlink" href="#createlayer" title="Link to this heading">¶</a></h2>
 <p>レイヤーを生成します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">new</span> <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">createLayer</span><span class="p">(</span><span class="nb">id</span><span class="p">,{</span><span class="n">width</span><span class="p">:</span><span class="n">幅</span><span class="p">,</span><span class="n">height</span><span class="p">:</span><span class="n">高さ</span><span class="p">,</span><span class="n">x</span><span class="p">:</span><span class="n">X座標</span><span class="p">,</span><span class="n">y</span><span class="p">:</span><span class="n">Y座標</span><span class="p">,</span><span class="n">z</span><span class="p">:</span><span class="n">Z座標</span><span class="p">,</span><span class="n">bgC</span><span class="p">:</span><span class="n">背景色</span><span class="p">,</span><span class="n">fontC</span><span class="p">:</span><span class="n">文字色</span><span class="p">,</span><span class="n">html</span><span class="p">:</span><span class="n">HTML</span><span class="p">});</span>
 <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">createLayer</span><span class="p">(</span><span class="nb">id</span><span class="p">,{</span><span class="n">width</span><span class="p">:</span><span class="n">幅</span><span class="p">,</span><span class="n">height</span><span class="p">:</span><span class="n">高さ</span><span class="p">,</span><span class="n">x</span><span class="p">:</span><span class="n">X座標</span><span class="p">,</span><span class="n">y</span><span class="p">:</span><span class="n">Y座標</span><span class="p">,</span><span class="n">z</span><span class="p">:</span><span class="n">Z座標</span><span class="p">,</span><span class="n">bgC</span><span class="p">:</span><span class="n">背景色</span><span class="p">,</span><span class="n">fontC</span><span class="p">:</span><span class="n">文字色</span><span class="p">,</span><span class="n">html</span><span class="p">:</span><span class="n">HTML</span><span class="p">});</span>
@@ -487,21 +485,21 @@ Ajaxを使いますと、URLはそのままで外部ページなどを非同期�
 </div>
 </section>
 <section id="xmlobject">
-<h2><span class="section-number">2.18. </span>XMLObject<a class="headerlink" href="#xmlobject" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.18. </span>XMLObject<a class="headerlink" href="#xmlobject" title="Link to this heading">¶</a></h2>
 <p>XMLHttpObjectのクロスブラウザメソッドです。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="n">xmlobj</span> <span class="o">=</span> <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">XMLObject</span><span class="p">();</span>
 </pre></div>
 </div>
 </section>
 <section id="httprequset">
-<h2><span class="section-number">2.19. </span>httpRequset<a class="headerlink" href="#httprequset" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.19. </span>httpRequset<a class="headerlink" href="#httprequset" title="Link to this heading">¶</a></h2>
 <p>クロスブラウザ版XMLHttpRequestです。非同期でXMLなどの文書フォーマットをサーバから取得することが出来ます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">httpRequest</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">method</span><span class="p">,</span><span class="n">func</span><span class="p">,</span><span class="n">query</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
 <section id="loadxml">
-<h2><span class="section-number">2.20. </span>loadXML<a class="headerlink" href="#loadxml" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.20. </span>loadXML<a class="headerlink" href="#loadxml" title="Link to this heading">¶</a></h2>
 <p>サーバー上のXMLを取得します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">new</span> <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">loadXML</span><span class="p">(</span><span class="n">サーバー上のXML名</span><span class="p">);</span>
 <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">loadXML</span><span class="p">(</span><span class="n">サーバー上のXML名</span><span class="p">);</span>
@@ -509,14 +507,14 @@ Ajaxを使いますと、URLはそのままで外部ページなどを非同期�
 </div>
 </section>
 <section id="xmltransform">
-<h2><span class="section-number">2.21. </span>xmlTransform<a class="headerlink" href="#xmltransform" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.21. </span>xmlTransform<a class="headerlink" href="#xmltransform" title="Link to this heading">¶</a></h2>
 <p>XMLにXSLTを適用します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">new</span> <span class="n">spider</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span><span class="o">.</span><span class="n">xmlTransform</span><span class="p">(</span><span class="n">XMLソース</span><span class="p">,</span><span class="n">XSLT</span><span class="p">);</span> <span class="n">spider</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span><span class="o">.</span><span class="n">xmlTransform</span><span class="p">(</span><span class="n">XMLソース</span><span class="p">,</span><span class="n">XSLT</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
 <section id="css">
-<h2><span class="section-number">2.22. </span>css<a class="headerlink" href="#css" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.22. </span>css<a class="headerlink" href="#css" title="Link to this heading">¶</a></h2>
 <p>CSSを使った変更が出来るメソッドです。</p>
 <p>1.CSSのクラスを追加:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s2">&quot;addClass&quot;</span><span class="p">,{</span><span class="n">css_class</span><span class="p">:</span><span class="s2">&quot;任意のクラス名&quot;</span><span class="p">});</span>
@@ -664,7 +662,7 @@ Ajaxを使いますと、URLはそのままで外部ページなどを非同期�
 </div>
 </section>
 <section id="info">
-<h2><span class="section-number">2.23. </span>info<a class="headerlink" href="#info" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.23. </span>info<a class="headerlink" href="#info" title="Link to this heading">¶</a></h2>
 <p>現在の時刻を表示:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;date&quot;</span><span class="p">);</span>
 </pre></div>
@@ -681,7 +679,7 @@ spider(&quot;&quot;).info(&quot;flashVersion&quot;);   //modeがversionの場合
 </div>
 </section>
 <section id="slideshow">
-<h2><span class="section-number">2.24. </span>slideShow<a class="headerlink" href="#slideshow" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.24. </span>slideShow<a class="headerlink" href="#slideshow" title="Link to this heading">¶</a></h2>
 <p>コンテンツをキーボードのカーソルキーで操作して切り替えることが出来ます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">new</span> <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">slideShow</span><span class="p">(</span><span class="n">コンテンツのid名の配列</span><span class="p">);</span>
 
@@ -690,49 +688,49 @@ spider(&quot;&quot;).info(&quot;flashVersion&quot;);   //modeがversionの場合
 </div>
 </section>
 <section id="imgchange">
-<h2><span class="section-number">2.25. </span>imgChange<a class="headerlink" href="#imgchange" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.25. </span>imgChange<a class="headerlink" href="#imgchange" title="Link to this heading">¶</a></h2>
 <p>カーソルキーで画像を切り替えることが出来ます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span><span class="o">.</span><span class="n">imgChange</span><span class="p">({</span><span class="n">width</span><span class="p">:</span><span class="mi">640</span><span class="p">,</span><span class="n">height</span><span class="p">:</span><span class="mi">480</span><span class="p">,</span><span class="nb">dir</span><span class="p">:</span><span class="s2">&quot;dir&quot;</span><span class="p">,</span><span class="n">array</span><span class="p">:</span><span class="s2">&quot;array&quot;</span><span class="p">});</span>
 </pre></div>
 </div>
 </section>
 <section id="movieplayer">
-<h2><span class="section-number">2.26. </span>moviePlayer<a class="headerlink" href="#movieplayer" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.26. </span>moviePlayer<a class="headerlink" href="#movieplayer" title="Link to this heading">¶</a></h2>
 <p>MPEG4、Ogg Vorbis、Web M形式の動画を再生:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;zzz&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">moviePlayer</span><span class="p">([</span><span class="s2">&quot;x.mp4&quot;</span><span class="p">,</span><span class="s2">&quot;y.ogg&quot;</span><span class="p">,</span><span class="s2">&quot;z.webm&quot;</span><span class="p">],{</span><span class="n">width</span><span class="p">:</span><span class="s2">&quot;640&quot;</span><span class="p">,</span><span class="n">height</span><span class="p">:</span><span class="s2">&quot;480&quot;</span><span class="p">});</span>
 </pre></div>
 </div>
 </section>
 <section id="audioplayer">
-<h2><span class="section-number">2.27. </span>audioPlayer<a class="headerlink" href="#audioplayer" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.27. </span>audioPlayer<a class="headerlink" href="#audioplayer" title="Link to this heading">¶</a></h2>
 <p>MP3、Ogg Vorbis形式の音楽を再生する:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;zzz&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">audioPlayer</span><span class="p">([</span><span class="s2">&quot;x.mp3&quot;</span><span class="p">,</span><span class="s2">&quot;y.ogg&quot;</span><span class="p">]);</span>
 </pre></div>
 </div>
 </section>
 <section id="seekingmedia">
-<h2><span class="section-number">2.28. </span>seekingMedia<a class="headerlink" href="#seekingmedia" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.28. </span>seekingMedia<a class="headerlink" href="#seekingmedia" title="Link to this heading">¶</a></h2>
 <p>シーク時間を設定:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;zzz&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">seekingMedia</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
 <section id="parsexml">
-<h2><span class="section-number">2.29. </span>parseXML<a class="headerlink" href="#parsexml" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.29. </span>parseXML<a class="headerlink" href="#parsexml" title="Link to this heading">¶</a></h2>
 <p>XMLを解析します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span><span class="o">.</span><span class="n">parseXML</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">method</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
 <section id="selectimage">
-<h2><span class="section-number">2.30. </span>selectImage<a class="headerlink" href="#selectimage" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.30. </span>selectImage<a class="headerlink" href="#selectimage" title="Link to this heading">¶</a></h2>
 <p>クリックすると画像が表示されるセレクタを生成します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span><span class="o">.</span><span class="n">selectImage</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span><span class="n">ar</span><span class="p">,</span><span class="n">titleA</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
 <section id="meltdown">
-<h2><span class="section-number">2.31. </span>meltdown<a class="headerlink" href="#meltdown" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.31. </span>meltdown<a class="headerlink" href="#meltdown" title="Link to this heading">¶</a></h2>
 <p>Webページが崩落します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">new</span> <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">meltdown</span><span class="p">();</span>
 <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">meltdown</span><span class="p">();</span>
@@ -740,7 +738,7 @@ spider(&quot;&quot;).info(&quot;flashVersion&quot;);   //modeがversionの場合
 </div>
 </section>
 <section id="matrixeffect">
-<h2><span class="section-number">2.32. </span>matrixEffect<a class="headerlink" href="#matrixeffect" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.32. </span>matrixEffect<a class="headerlink" href="#matrixeffect" title="Link to this heading">¶</a></h2>
 <p>映画「マトリックス」のようなエフェクトを実現することが出来ます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">matrixEffect</span><span class="p">(</span><span class="n">id名</span><span class="p">);</span>
 <span class="n">new</span> <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">matrixEffect</span><span class="p">(</span><span class="n">id名</span><span class="p">);</span>
@@ -748,7 +746,7 @@ spider(&quot;&quot;).info(&quot;flashVersion&quot;);   //modeがversionの場合
 </div>
 </section>
 <section id="particle">
-<h2><span class="section-number">2.33. </span>particle<a class="headerlink" href="#particle" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.33. </span>particle<a class="headerlink" href="#particle" title="Link to this heading">¶</a></h2>
 <p>Canvasでパーティクル表現を実現します。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">new</span> <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">particle</span><span class="p">(</span><span class="n">id名</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="n">G</span><span class="p">,</span><span class="n">B</span><span class="p">);</span>
 <span class="n">spider</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">particle</span><span class="p">(</span><span class="n">id名</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="n">G</span><span class="p">,</span><span class="n">B</span><span class="p">);</span>
@@ -756,7 +754,7 @@ spider(&quot;&quot;).info(&quot;flashVersion&quot;);   //modeがversionの場合
 </div>
 </section>
 <section id="command">
-<h2><span class="section-number">2.34. </span>command<a class="headerlink" href="#command" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">2.34. </span>command<a class="headerlink" href="#command" title="Link to this heading">¶</a></h2>
 <p>キーボードのショートカットでページ内の特定の場所にWebページを呼び出すように設定出来ます。:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spider</span><span class="p">(</span><span class="s2">&quot;xxx&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;↑ ↑ ↓ ↓ ← → ← → b a&quot;</span><span class="p">,</span><span class="s2">&quot;http://www.google.co.jp&quot;</span><span class="p">);</span>
 </pre></div>
@@ -771,8 +769,9 @@ spider(&quot;&quot;).info(&quot;flashVersion&quot;);   //modeがversionの場合
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">目次</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">目次</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">1. spider.js</a><ul>
 <li><a class="reference internal" href="#id1">1.1. spider.jsを使う</a><ul>
 <li><a class="reference internal" href="#id2">1.1.1. spider.jsの呼び出し方</a></li>
@@ -823,12 +822,17 @@ spider(&quot;&quot;).info(&quot;flashVersion&quot;);   //modeがversionの場合
 </li>
 </ul>
 
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="../vipertools/vipertools005.html"
-                        title="前の章へ"><span class="section-number">8. </span>ナンバーズ予想用モジュール</a></p>
-  <h4>次のトピックへ</h4>
-  <p class="topless"><a href="../tech/tech001.html"
-                        title="次の章へ"><span class="section-number">1. </span>Ubuntu系ディストリビューション向けテクニック</a></p>
+  </div>
+  <div>
+    <h4>前のトピックへ</h4>
+    <p class="topless"><a href="../vipertools/vipertools005.html"
+                          title="前の章へ"><span class="section-number">8. </span>ナンバーズ予想用モジュール</a></p>
+  </div>
+  <div>
+    <h4>次のトピックへ</h4>
+    <p class="topless"><a href="../tech/tech001.html"
+                          title="次の章へ"><span class="section-number">1. </span>Ubuntu系ディストリビューション向けテクニック</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>このページ</h3>
     <ul class="this-page-menu">
@@ -845,7 +849,7 @@ spider(&quot;&quot;).info(&quot;flashVersion&quot;);   //modeがversionの場合
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -867,8 +871,8 @@ spider(&quot;&quot;).info(&quot;flashVersion&quot;);   //modeがversionの場合
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, takamitsu_h.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    &#169; 著作権 2023, takamitsu_h.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

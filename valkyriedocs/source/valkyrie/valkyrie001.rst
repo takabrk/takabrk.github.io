@@ -1,15 +1,15 @@
-.. Valkyrie Linux documentation master file, created by
+.. UBOLD-OP documentation master file, created by
    sphinx-quickstart on Wed Feb  3 19:35:57 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Valkyrie Linux
+UBOLD-OP
 ===============
 
-Valkyrie LinuxはUbuntu LTSをベースにした64bitオペレーティングシステムです。このOSのデスクトップ環境はOpenboxとTint2で構成しています。
+UBOLD-OPはUbuntu LTSをベースにした64bitオペレーティングシステムです。このOSのデスクトップ環境はOpenboxとTint2で構成しています。
 このOSに付属しているカスタムカーネル「Noir Linux Kernel」は、リアルタイム性能とレスポンス性能を向上させます。ウィンドウマネージャーのOpenboxには角丸パッチを適用しています。
 
-http://www.vsrx.work/article/418075361.html
+https://note.com/vsrx/n/n5081aab827c6
 
 推奨システム要件
 ----------------
@@ -42,19 +42,19 @@ STCK1A32WFC(Intel)
 ベースにしたLinuxディストリビューション
 ---------------------------------------
 
-Ubuntu 22.04.2 LTS
+Ubuntu 24.04.3 LTS
 
 Kernel
 ------------
 
-◎Noir linux Kernel 6.1.8
+◎Noir linux Kernel 6.18.2
 ::
   ◇based kernel
-    linux kernel 6.1
+    linux kernel 6.18.2
 
   ◇Applied patches
-    - Built on the GCC 12.1.0
-    - CPU scheduler -&gt; CFS
+    - Built on the GCC 13.3
+    - CPU scheduler -&gt; BORE
     - Default I/O scheduler -&gt; BFQ
     - Processor family -&gt; Generic X86_64
     - Kernel Compression mode -&gt; zstd
@@ -81,26 +81,21 @@ PPA
 
     Ubuntu Japanese Team PPA
     Canonical kernel PPA
-    Atom PPA
-    BootRepair PPA
-    Docker PPA
     Wine HQ PPA
     OBS Studio PPA
-    Lutris  PPA
-    LibreOffice PPA
 
 OSスペック
 -------------
 
 ::
 
-    - Ubuntu 22.04.1 LTS based
-    - default kernel : Ubuntu kernel 5.19.0 generic,optional : Custom kernel "Noir Linux kernel 6.1.8"
+    - Ubuntu 24.04.3 LTS based
+    - kernel : Custom kernel "Noir Linux kernel 6.18.2"
     - Openbox with Rounded Window patch
     - Tint2
     - original application "Viper Tools"
-    - linux firmware 20220329.git68128
-    - Mesa 22.0.5
+    - linux firmware 20240318
+    - Mesa 25.0.7
     - dunst
     - xfce4-terminal,xfce4-taskmanager,xfce4-screenshooter,xfce4-power-managemer
     - Intel iHD Driver 21.1.0
@@ -112,21 +107,21 @@ OSスペック
 
 ::
 
-    - Firefox 109
-    - emacs-nox 27.1,leafpad,glade
-    - PipeWire
-    - GIMP 2.10.30
-    - GCC 12/11.2,Python 3.10.6,node.js,libllvm15
-    - Wine 6.0.1
+    - Firefox 146
+    - emacs-nox 29.3,l3afpad,glade
+    - PulseAudio
+    - GIMP 3.0.4
+    - GCC 13.3,Python 3.12.3,LLVM 20
     - OBS Studio,Shotcut,Audacious,Audacity,soundconverter,Blender 3.4.1,ffmpeg,SMPlyer
     - Steam
     - gnumeric,abiword,KCalc
     - keepassxc
     - unetbootin,gparted,boot-repair,gnome disks
-    - git 2.36.0
+    - git
     - X11VNC,remmina
-    - OpenJtalk
     - Arronax
+    - nitrogen
+    - Scribus
 
 アイコン
 --------
@@ -149,48 +144,37 @@ OSスペック
 ○オリジナルアプリ::
     Python製アプリケーション:Viper Tools
 
-◯Webアプリ::
-    DP-IP
-    BROARDBAND  Speedtest
-    Wifu2x
-    printer settings
-
-
 ○キーボードショートカット::
 
-     [Window Close Shortcut]
-     Shift+Windows+C Close Window
-
-     [Change Window Shortcut]
-     Windwos+j prev
-     Windows+k next
-     Shift+Alt+Left SendToDesktopLeft
-     Shift+Alt+Right SendToDesktopRight
-     Windows+1 desktop1
-     Windows+2 desktop2
-     Windows+3 desktop3
-     Windows+4 desktop4
-     Windows+5 desktop5
-     Windows+6 desktop6
-
-     [Window Tilling]
-     Windows+Left HalfLeftScreen
-     Windows+Right HalfRightScreen
-     Windows+Up HalfUpperScreen
-     Windows+Down HalfLowerScreen
-     Window+z ToggleMaximize
-     Windows+x Iconify
-     
-     [Volume Shortcut]
-     Windows+u volume up
-     Windows+i volume down
-
-     [right ckick menu of Openbox]
-     Ctrl+m
-
-     [Apps]
-     Windows+Enter Open Terminal
-     WIndows+e Open Emacs
+    [Window Close Shortcut]
+        Shift+Windows+C　Close Window
+    [Change Window Shortcut]
+        Windwos+j　prev
+        Windows+k　next
+        Shift+Alt+Left　SendToDesktopLeft
+        Shift+Alt+Right　SendToDesktopRight
+        Windows+1　desktop1
+        Windows+2　desktop2
+        Windows+3　desktop3
+        Windows+4　desktop4
+        Windows+5　desktop5
+        Windows+6　desktop6
+    [Window Tilling]
+        Windows+Left　HalfLeftScreen
+        Windows+Right　HalfRightScreen
+        Windows+Up　HalfUpperScreen
+        Windows+Down　HalfLowerScreen
+        Window+z　ToggleMaximize
+        Windows+x　Iconify
+    [Volume Shortcut]
+        Windows+u　volume up
+        Windows+i　volume down
+    [right ckick menu of Openbox]
+        Ctrl+M
+    [Apps]
+        Windows+Enter　Open Terminal
+        Windows+e　Open Emacs
+        Windows+C　Open Google Chrome(Google Chromeインストール後に使用可能)
 
 インストール方法
 ================
@@ -205,7 +189,7 @@ https://unetbootin.github.io/
 
 4.Live USBでシステムを起動。ネットに接続しておきます。
 
-5.右クリックメニューの「Install Valkyrie Linux」という項目をクリックすると、インストーラーが起動します。これを使って、インストール作業を行います。もし、ブートローダー「Grub2」のインストールが失敗した場合は、LiveUSBのシステム再起動を行って、右クリックメニューからboot-repairを使ってインストールする事が出来ます。
+5.右クリックメニューの「Install UBOLD-OP」という項目をクリックすると、インストーラーが起動します。これを使って、インストール作業を行います。もし、ブートローダー「Grub2」のインストールが失敗した場合は、LiveUSBのシステム再起動を行って、右クリックメニューからboot-repairを使ってインストールする事が出来ます。
 
 6.OSのインストールが終わった後に出てくるダイアログで「試用を続ける」を選択する。選択後に自動的にboot-repairが起動。
 
@@ -234,18 +218,18 @@ homeディレクトリを別にした状態で、再インストールをして�
 
 4.保存して再起動させると、セキュアブートが無効化されてシステムを起動する事が出来ます。
 
-64bit OS「Valkyrie Linux」の特長
+64bit OS「UBOLD-OP」の特長
 ==================================
 
 * デスクトップ環境は、LXQtを採用しています。
 
-  デスクトップ環境がLXQtを採用していて、ウィンドウマネージャーはOpenboxです。デスクトップ環境のXfceなどから様々なアプリケーションを使っています。また、fbpanelやgmrunやnitrogenもデスクトップの構築に使っています。
+  デスクトップ環境がLXQtを採用していて、ウィンドウマネージャーはOpenboxです。nitrogenもデスクトップの構築に使っています。
 
   メモリー使用量を減らす事で、アプリケーションを使う時に必要なメモリーをより多く確保する事が出来ます。
 
 * Linuxカーネルは、最新のLinuxカーネルベースの高レスポンス性が高いカスタムカーネルを搭載。
 
-* Mesa 21の導入により、WineやPCSX2などで3Dゲームを動作させた時のパフォーマンスが大幅に向上しています。
+* Mesaの導入により、WineやPCSX2などで3Dゲームを動作させた時のパフォーマンスが大幅に向上しています。
 
 * VDAPU及びVAAPI対応ドライバを採用している為、動画支援機能で低CPU負荷で動画を再生出来ます。
 
@@ -263,7 +247,7 @@ homeディレクトリを別にした状態で、再インストールをして�
 
 * PSPやPS2やPSのゲームエミュレーション、PlayOnLinux+Wineによる古いWindowsアプリケーションの利用が可能です。
 
-* GIMPやAvidemuxやHandbrakeなどWindowsやLinuxなどでお馴染みのアプリケーションをフル装備しています。最初からプログラミング・オフィス文書作成・イラストレーション・画像編集・動画エンコード・動画編集・音楽再生・3Dモデリング・オンラインサービスの利用する事が可能です。
+* GIMPなどのアプリケーションを装備しています。最初からプログラミング・オフィス文書作成・イラストレーション・画像編集・動画エンコード・動画編集・音楽再生・3Dモデリング・オンラインサービスの利用する事が可能です。
 
 * UEFIモードでLiveUSBやハードディスクへのフルインストールでの起動が出来るようになっていますので、ほとんどのマザーボードに対応
 
