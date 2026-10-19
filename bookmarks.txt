@@ -150,7 +150,7 @@
     <ul>
         <li><a href="http://www.kernel.org/" target="_blank">The Linux Kernel Archives</a></li>
         <li><a href="https://wiki.archlinux.jp/index.php/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB" target="_blank">カーネル Arch Wiki</a></li>
-       <li><a href="https://github.com/xanmod/linux-patches" target="_blank">Xanmod kernel patches</a></li>
+       <li><a href="https://gitlab.com/xanmod/linux-patches" target="_blank">Xanmod kernel patches</a></li>
         <li><a href="https://github.com/sirlucjan/kernel-patches" target="_blank">kernel-patches</a>
         <li><a href="https://xanmod.org/" target="_blank">XanMod Kernel</a></li>
         <li><a href="https://github.com/zen-kernel/zen-kernel/releases" target="_blank">Zen kernel</a></li>
