@@ -46,7 +46,7 @@ load(
                 //  .html("add",{string:"av2"});
               //spider("av2").scrollanim("movex");
           }else{
-              spider("youtube").html("ajax",{url:"youtube.txt"});
+              // spider("youtube").html("ajax",{url:"youtube.txt"});
               spider("bookmarks").html("ajax",{url:"bookmarks.txt"});
           }
          spider("").tool("deleteCookie",{name:"website"}).tool("createCookie",{name:"website", value:"Welcome", expires:new Date(new Date().getTime() + 10000)});
