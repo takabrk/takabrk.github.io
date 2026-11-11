@@ -1,78 +1,31 @@
 <h1>Bookmarks</h1>
 <ul>
+    <li><a href="#steam">Steam</a></li>
+    <li><a href="#mod">ゲームMOD</a></li>
+    <li><a href="#degital">デジタル系ニュース</a></li>
+    <li><a href="#linux">Linux</a></li>
+    <li><a href="#script">汎用プログラミング言語・スクリプト言語</a></li>
+    <li><a href="#webtech">Webプログラミングテクニック</a></li>
+    <li><a href="#pcshop">PCショップ・家電量販店</a></li>
     <li><a href="#ondemand">オンデマンドサービス</a></li>
     <li><a href="#news">新聞・テレビ局</a></li>
     <li><a href="#movie">動画共有サイト</a></li>
     <li><a href="#takara">宝くじ</a></li>
     <li><a href="#gambling">競馬・競艇</a></li>
-    <li><a href="#degital">デジタル系ニュース</a></li>
-    <li><a href="#pcshop">PCショップ・家電量販店</a></li>
-    <li><a href="#webtech">Webプログラミングテクニック</a></li>
-    <li><a href="#linux">Linux</a></li>
     <li><a href="#livehouse">ライブハウス</a></li>
     <li><a href="#browser">ブラウザ</a></li>
-    <li><a href="#script">汎用プログラミング言語・スクリプト言語</a></li>
 </ul>
-<h2 id="ondemand">オンデマンドサービス</h2>
+<h2 id="steam">Steam</h2>
     <ul>
-        <li><a href="http://tver.jp/" target="_blank">Tver</a></li>
-        <li><a href="https://anime.dmkt-sp.jp/animestore/tp_pc" target="_blank">dアニメ</a></li>
-        <li><a href="https://abema.tv/" target="_blank">AbemaTV</a></li>
+       <li><a href="https://store.steampowered.com/?l=japanese" target="_blank">Steam</a></li>
     </ul>
-<h2 id="portal">ポータルサイト</h2>
+<h2 id="mod">ゲームMOD</h2>
     <ul>
-        <li><a href="http://www.google.co.jp/" target="_blank">Google</a></li>
-        <li><a href="http://www.yahoo.co.jp" target="_blank">Yahoo!Japan</a></li>
-  </ul>
-<h2 id="news">新聞・テレビ局</h2>
-    <ul>
-        <li><a href="http://www.sankei.com/" target="_blank">産経新聞</a></li>
-        <li><a href="http://www.yomiuri.co.jp/" target="_blank">読売新聞</a></li>
-        <li><a href="http://www.nikkei.com/" target="_blank">日経新聞</a></li>
-        <li><a href="http://www.asahi.com/" target="_blank">朝日新聞</a></li>
-        <li><a href="http://mainichi.jp/" target="_blank">毎日新聞</a></li>
-        <li><a href="http://www.nhk.or.jp/" target="_blank">NHK</a></li>
-        <li><a href="http://www.tv-asahi.co.jp/" target="_blank">テレビ朝日</a></li>
-        <li><a href="http://www.tbs.co.jp/" target="_blank">TBS</a></li>
-        <li><a href="http://www.fujitv.co.jp/index.html" target="_blank">フジテレビ</a></li>
-        <li><a href="http://www.ntv.co.jp/" target="_blank">日本テレビ</a></li>
-        <li><a href="http://www.tv-tokyo.co.jp/" target="_blank">テレビ東京</a></li>
-        <li><a href="http://www.mbs.jp/" target="_blank">MBS</a></li>
-        <li><a href="http://www.asahi.co.jp/" target="_blank">テレビ朝日</a></li>
-        <li><a href="http://www.ytv.co.jp/index.html" target="_blank">よみうりテレビ</a></li>
-        <li><a href="http://www.tv-osaka.co.jp/" target="_blank">テレビ大阪</a></li>
-        <li><a href="http://www.ktv.jp/index.html" target="_blank">関西テレビ</a></li>
-        <li><a href="http://www.kbs-kyoto.co.jp/" target="_blank">京都テレビ</a></li>
-        <li><a href="http://www.sun-tv.co.jp/" target="_blank">サンテレビ</a></li>
-    </ul>
-<h2 id="movie">動画共有サイト</h2>
-    <ul>
-        <li><a href="http://www.youtube.com" target="_blank">Youtube</a></li>
-        <li><a href="http://www.nicovideo.jp/" target="_blank">ニコニコ動画</a></li>
-    </ul>
-<h2 id="takara">宝くじ</h2>
-    <ul>
-        <li><a href="http://www.takarakuji.mizuhobank.co.jp/" target="_blank">みずほ銀行 宝くじコーナー</a></li>
-        <li><a href="http://www.takarakujinet.co.jp/" target="_blank">宝くじネット・ドットコム</a></li>
-        <li><a href="https://numbers3.money-plan.net/" target="_blank">Numbers3通信</a></li>
-        <li><a href="https://numbers4.money-plan.net/" target="_blank">Numbers4通信</a></li>
-        <li><a href="https://loto6.money-plan.net/" target="_blank">LOTO6通信</a></li>
-        <li><a href="https://miniloto.money-plan.net/" target="_blank">MINI LOTO通信</a></li>
-        <li><a href="https://bingo5.money-plan.net/" target="_blank">BINGO5通信</a></li>
-    </ul>
-<h2 id="gambling">競馬・競艇</h2>
-    <ul>
-        <li><a href="http://www.jra.go.jp/" target="_blank">ＪＲＡ</a></li>
-        <li><a href="http://keiba-lv-st.jp/" target="_blank">地方競馬ライブ</a></li>
-        <li><a href="http://www.oddspark.com/keiba/yosou/spotlight/index.html" target="_blank">オッズパーク</a></li>
-        <li><a href="http://www.nankankeiba.com/index.html" target="_blank">南関東4競馬場</a></li>
-        <li><a href="http://keiba.yahoo.co.jp/" target="_blank">Yahoo!スポーツ 競馬</a></li>
-        <li><a href="http://www.netkeiba.com/" target="_blank">Netkeiba.com</a></li>
-        <li><a href="http://neon.cside4.com/hrw/jiten/tips/combination.html" target="_blank">競馬辞典 Tips 組み合わせ数計算</a></li>
-        <li><a href="http://npn.co.jp/article/category/1/" target="_blank">競馬 - リアルライブ</a></li>
-        <li><a href="http://blog.keibaoh.com/blog/" target="_blank">競馬王公式ブログ</a></li>
-        <li><a href="http://www.boatrace.jp/" target="_blank">ボートレースオフィシャルサイト</a></li>
-        <li><a href="https://kyoteibiyori.com/" target="_blank">ボートレース日和</a></li>
+        <li><a href="https://skyrimspecialedition.2game.info/" target="_blank">Skyrim Specail Edtion Modデータベース</a></li>
+        <li><a href="https://fallout4.2game.info/" target="_blank">Fallout4 Modデータベース</a></li>
+       <li><a href="https://github.com/Albeoris/Memoria" target="_blank">Memoria</a></li>
+       <li><a href=""https://sites.google.com/view/moguri-mod/home target="_blank">Moguri Mod</a></li>
+      <li><a href="https://reshade.me/" target="_blank">ReShade</a></li>
     </ul>
 <h2 id="degital">デジタル系ニュースサイト</h2>
     <ul>
@@ -141,7 +94,6 @@
         <li><a href="https://www6.atwiki.jp/vpvpwiki/pages/298.html" target="_blank">VPVP wiki</a></li>
         <li><a href="http://open-jtalk.sourceforge.net/" target="_blank">Open Jtalk</a></li>
     </ul>
-
 <h2 id="pcshop">PCショップ・家電量販店</h2>
     <ul>
       <li><a href="http://www.sofmap.com/shop/default.asp" target="_blank">Sofmap</a></li>
@@ -166,6 +118,82 @@
         <li><a href="http://blog.mozilla.com/" target="_blank">The Mozilla Blog</a></li>
         <li><a href="http://ejohn.org/category/blog/" target="_blank">John Resig Blog</a></li>
     </ul>
+<h2 id="script">汎用プログラミング・スクリプト言語</h2>
+<ul>
+	<li><a href="http://www.python.org" target="_blank">Python</a></li>
+	<li><a href="http://www.ruby-lang.org/ja/" target="_blank">Ruby</a></li>
+	<li><a href="http://www.perl.com/" target="_blank">Perl</a></li>
+	<li><a href="http://processing.org/" target="_blank">Processing</a></li>
+	<li><a href="http://www.brython.info/" target="_blank">Brython</a></li>
+	<li><a href="http://www.w3.org/" target="_blank">W3C</a></li>
+	<li><a href="http://www.w3.org/TR/2003/CR-DOM-Level-3-Core-20031107/ecma-script-binding.html" target="_blank">ECMAScript</a></li>
+	<li><a href="http://labs.adobe.com/" target="_blank">Adobe labs.</a></li>
+  </ul>
+ <h2>Windows API　レイヤー</h2>
+<ul>
+	<li><a href="http://www.winehq.org/" target="_blank">Wine</a></li>
+ </ul>
+<h2 id="ondemand">オンデマンドサービス</h2>
+    <ul>
+        <li><a href="http://tver.jp/" target="_blank">Tver</a></li>
+        <li><a href="https://anime.dmkt-sp.jp/animestore/tp_pc" target="_blank">dアニメ</a></li>
+        <li><a href="https://abema.tv/" target="_blank">AbemaTV</a></li>
+    </ul>
+<h2 id="portal">ポータルサイト</h2>
+    <ul>
+        <li><a href="http://www.google.co.jp/" target="_blank">Google</a></li>
+        <li><a href="http://www.yahoo.co.jp" target="_blank">Yahoo!Japan</a></li>
+  </ul>
+<h2 id="news">新聞・テレビ局</h2>
+    <ul>
+        <li><a href="http://www.sankei.com/" target="_blank">産経新聞</a></li>
+        <li><a href="http://www.yomiuri.co.jp/" target="_blank">読売新聞</a></li>
+        <li><a href="http://www.nikkei.com/" target="_blank">日経新聞</a></li>
+        <li><a href="http://www.asahi.com/" target="_blank">朝日新聞</a></li>
+        <li><a href="http://mainichi.jp/" target="_blank">毎日新聞</a></li>
+        <li><a href="http://www.nhk.or.jp/" target="_blank">NHK</a></li>
+        <li><a href="http://www.tv-asahi.co.jp/" target="_blank">テレビ朝日</a></li>
+        <li><a href="http://www.tbs.co.jp/" target="_blank">TBS</a></li>
+        <li><a href="http://www.fujitv.co.jp/index.html" target="_blank">フジテレビ</a></li>
+        <li><a href="http://www.ntv.co.jp/" target="_blank">日本テレビ</a></li>
+        <li><a href="http://www.tv-tokyo.co.jp/" target="_blank">テレビ東京</a></li>
+        <li><a href="http://www.mbs.jp/" target="_blank">MBS</a></li>
+        <li><a href="http://www.asahi.co.jp/" target="_blank">テレビ朝日</a></li>
+        <li><a href="http://www.ytv.co.jp/index.html" target="_blank">よみうりテレビ</a></li>
+        <li><a href="http://www.tv-osaka.co.jp/" target="_blank">テレビ大阪</a></li>
+        <li><a href="http://www.ktv.jp/index.html" target="_blank">関西テレビ</a></li>
+        <li><a href="http://www.kbs-kyoto.co.jp/" target="_blank">京都テレビ</a></li>
+        <li><a href="http://www.sun-tv.co.jp/" target="_blank">サンテレビ</a></li>
+    </ul>
+<h2 id="movie">動画共有サイト</h2>
+    <ul>
+        <li><a href="http://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><a href="http://www.nicovideo.jp/" target="_blank">ニコニコ動画</a></li>
+    </ul>
+<h2 id="takara">宝くじ</h2>
+    <ul>
+        <li><a href="http://www.takarakuji.mizuhobank.co.jp/" target="_blank">みずほ銀行 宝くじコーナー</a></li>
+        <li><a href="http://www.takarakujinet.co.jp/" target="_blank">宝くじネット・ドットコム</a></li>
+        <li><a href="https://numbers3.money-plan.net/" target="_blank">Numbers3通信</a></li>
+        <li><a href="https://numbers4.money-plan.net/" target="_blank">Numbers4通信</a></li>
+        <li><a href="https://loto6.money-plan.net/" target="_blank">LOTO6通信</a></li>
+        <li><a href="https://miniloto.money-plan.net/" target="_blank">MINI LOTO通信</a></li>
+        <li><a href="https://bingo5.money-plan.net/" target="_blank">BINGO5通信</a></li>
+    </ul>
+<h2 id="gambling">競馬・競艇</h2>
+    <ul>
+        <li><a href="http://www.jra.go.jp/" target="_blank">ＪＲＡ</a></li>
+        <li><a href="http://keiba-lv-st.jp/" target="_blank">地方競馬ライブ</a></li>
+        <li><a href="http://www.oddspark.com/keiba/yosou/spotlight/index.html" target="_blank">オッズパーク</a></li>
+        <li><a href="http://www.nankankeiba.com/index.html" target="_blank">南関東4競馬場</a></li>
+        <li><a href="http://keiba.yahoo.co.jp/" target="_blank">Yahoo!スポーツ 競馬</a></li>
+        <li><a href="http://www.netkeiba.com/" target="_blank">Netkeiba.com</a></li>
+        <li><a href="http://neon.cside4.com/hrw/jiten/tips/combination.html" target="_blank">競馬辞典 Tips 組み合わせ数計算</a></li>
+        <li><a href="http://npn.co.jp/article/category/1/" target="_blank">競馬 - リアルライブ</a></li>
+        <li><a href="http://blog.keibaoh.com/blog/" target="_blank">競馬王公式ブログ</a></li>
+        <li><a href="http://www.boatrace.jp/" target="_blank">ボートレースオフィシャルサイト</a></li>
+        <li><a href="https://kyoteibiyori.com/" target="_blank">ボートレース日和</a></li>
+    </ul>
 <h2 id="livehouse">ライブハウス</h2>
     <ul>
         <li><a href="http://www.arm-live.com/muse/osaka/" target="_blank">OSAKA MUSE</a></li>
@@ -188,21 +216,6 @@
     <ul>
          <li><a href="https://www.mozilla.org/ja/firefox/" target="_blank">Firefox</a></li>
          <li><a href="https://www.google.co.jp/chrome/index.html" target="_blank">Google Chrome</a></li>
-  </ul>
-  <h2 id="script">汎用プログラミング・スクリプト言語</h2>
-<ul>
-	<li><a href="http://www.python.org" target="_blank">Python</a></li>
-	<li><a href="http://www.ruby-lang.org/ja/" target="_blank">Ruby</a></li>
-	<li><a href="http://www.perl.com/" target="_blank">Perl</a></li>
-	<li><a href="http://processing.org/" target="_blank">Processing</a></li>
-	<li><a href="http://www.brython.info/" target="_blank">Brython</a></li>
-	<li><a href="http://www.w3.org/" target="_blank">W3C</a></li>
-	<li><a href="http://www.w3.org/TR/2003/CR-DOM-Level-3-Core-20031107/ecma-script-binding.html" target="_blank">ECMAScript</a></li>
-	<li><a href="http://labs.adobe.com/" target="_blank">Adobe labs.</a></li>
-  </ul>
-  <h2>Windows API　レイヤー</h2>
-<ul>
-	<li><a href="http://www.winehq.org/" target="_blank">Wine</a></li>
   </ul>
   <h2>ノベルゲーム用スクリプト言語・ライブラリ</h2>
 <ul>
@@ -255,44 +268,22 @@
 	<li><a href="http://www.2dbatlle.sakura.ne.jp/" target="_blank">マッスルファイト</a></li>
 	<li><a href="http://suge9.blog58.fc2.com/blog-entry-21.html" target="_blank">ヴァンガードプリンセス</a></li>
 	<li><a href="http://www.remakesonline.com/nemesis/index.php" target="_blank">Nemesis Online</a></li>
-	<li><a href="http://dynamic.acid-play.com/download/g-type" target="_blank">G-Type</a></li>
 	<li><a href="http://www.freem.ne.jp/win/game/2743" target="_blank">星空に馳せた想い</a></li>
-	<li><a href="http://www.bokunatu.com/" target="_blank">僕と君の夏休み</a></li>
 	<li><a href="http://www.vector.co.jp/soft/winnt/game/se484857.html" target="_blank">ぎゃるばん</a></li>
 	<li><a href="http://www.vector.co.jp/soft/winnt/game/se482485.html" target="_blank">リィンカーネーション</a></li>
-	<li><a href="http://humind.sakura.ne.jp/game/genpei/index.html" target="_blank">源平闘乱</a></li>
 	<li><a href="http://hanakovn.web.fc2.com/" target="_blank">ハナコ</a></li>
 	<li><a href="http://yuri.saiin.net/" target="_blank">彼女と彼女と私の七日</a></li>
 	<li><a href="http://true-re.sakura.ne.jp/true3.htm" target="_blank">TRUE REMEMBRANCE</a></li>
 	<li><a href="http://www.vector.co.jp/soft/dl/win95/game/se414790.html" target="_blank">ある夏の日、山荘にて……</a></li>
 	<li><a href="http://eslaf.main.jp/" target="_blank">E's Laf</a></li>
   </ul>
-  <h2>ゲームエミュレータ情報サイト</h2>
-<ul>
-	<li><a href="http://www.emulation9.com/" target="_blank">emulation number 9</a></li>
-	<li><a href="http://www.e2j.net/" target="_blank">MAME E2J</a></li>
-  </ul>
   <h2>ROMハックバッチ</h2>
 <ul>
-	<li><a href="http://mxmkitchen.com/2007/06/21/1531.php" target="_blank">WinIPS</a></li>
-	<li><a href="http://dqnbinary.jp.land.to/" target="_blank">ドラクエバイナリ</a></li>
 	<li><a href="http://www9.atwiki.jp/ffbin/pages/9.html" target="_blank">ffbin@Wiki</a></li>
 	<li><a href="http://www3.atwiki.jp/romancing/" target="_blank">romancing@Wiki</a></li>
 	<li><a href="http://www7.atwiki.jp/tacticsogre/" target="_blank">タクティクスオウガバイナリ</a></li>
-	<li><a href="http://wiki.livedoor.jp/fe_mars/d/FrontPage" target="_blank">ファイアーエンブレム　改造まとめWiki</a></li>
-	<li><a href="http://www.geocities.jp/t_echigoya/" target="_blank">越後屋本舗</a></li>
-	<li><a href="http://tsuru.tri6.net/emuclub/" target="_blank">エミュレータ倶楽部</a></li>
 	<li><a href="http://smblabo.web.fc2.com/" target="_blank">SMB Laboratory</a></li>
-	<li><a href="http://www1.chironoworks.com/game/" target="_blank">ゲーム人の大地</a></li>
-	<li><a href="http://www.geocities.jp/rinkaku89/" target="_blank">麟閣頁</a></li>
-	<li><a href="http://www.geocities.co.jp/Playtown-Bingo/2392/" target="_blank">ゲイムのお部屋へよおこそ</a></li>
-	<li><a href="http://www.geocities.jp/m_jackson0313/" target="_blank">ファミコンハックロム製作室</a></li>
 	<li><a href="http://www9.atwiki.jp/catnap222/pages/232.html" target="_blank">スーパーメトロイド研究所</a></li>
-  </ul>
-  <h2>PS2エミュレータ</h2>
-<ul>
-	<li><a href="http://www.pcsx2.net/" target="_blank">PCSX2</a></li>
-	<li><a href="https://www29.atwiki.jp/emups2/" target="_blank">PCSX2を語ろう</a></li>
   </ul>
   <h2>PSエミュレータ</h2>
 <ul>
@@ -300,11 +291,7 @@
 	<li><a href="http://www.pbernert.com/html/gpu.htm" target="_blank">Pete's OpenGL2 PSX GPU</a></li>
 	<li><a href="https://www.zophar.net/utilities/psspuplugins/eternal-spu.html" target="_blank">Eternal SPU </a></li>
 	<li><a href="http://www.pbernert.com/html/cdr.htm" target="_blank">P.E.Op.S. CDR </a></li>
-	<li><a href="http://www.geocities.co.jp/Playtown-Rook/2087/" target="_blank">Harakiri Pad Plugin</a></li>
   </ul>
-  <h2>セガサターンエミュレータ</h2>
-<ul>
-	<li><a href="http://www.geocities.jp/mj3kj8o5/ssf/" target="_blank">SSF</a></li>
   </ul>
   <h2>Nintendo64エミュレータ</h2>
 <ul>
@@ -313,7 +300,4 @@
   <h2>アーケードゲームエミュレータ</h2>
 <ul>
 	<li><a href="http://mameplus.sourceforge.net/" target="_blank">MAME32 Plus!</a></li>
-	<li><a href="http://59aku.fam.cx/new/impact/impact_p1.htm" target="_blank">Zinc1.1(本体とGPUプラグイン）</a></li>
-	<li><a href="http://nebula.emulatronia.com/" target="_blank">MODEL2emulator</a></li>
-	<li><a href="http://nebula.emulatronia.com/" target="_blank">CPS3 emulator</a></li>
   </ul>
